@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кото-кликер 2.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Стартовый экран -->
+    <div class="start-screen show">
+        <h1>😼 Кото-кликер 2.0</h1>
+        <p>Добро пожаловать в самую раздражающую игру на планете!</p>
+        <button class="start-btn">Начать игру</button>
+    </div>
+
+    <!-- Основная игра -->
+    <div class="container hidden">
+        <div class="header">
+            <div class="counter">0</div>
+            <button class="mode-btn">Активировать режим</button>
+        </div>
+
+        <div class="cat-container">
+            <img src="assets/cat.png" alt="Кот" class="cat-image">
+        </div>
+        <div class="joke-display"></div>
+
+        <div class="upgrades">
+            <div class="upgrade-card" data-type="laser" data-base-cost="50">
+                <div class="upgrade-title">Лазерная указка</div>
+                <div class="upgrade-price">50 кликов</div>
+                <button class="upgrade-btn">Купить</button>
+            </div>
+            <div class="upgrade-card" data-type="feeder" data-base-cost="200">
+                <div class="upgrade-title">Корм для кота</div>
+                <div class="upgrade-price">200 кликов</div>
+                <button class="upgrade-btn">Купить</button>
+            </div>
+            <div class="upgrade-card" data-type="trainer" data-base-cost="500">
+                <div class="upgrade-title">Дрессировщик</div>
+                <div class="upgrade-price">500 кликов</div>
+                <button class="upgrade-btn">Купить</button>
+            </div>
+            <div class="upgrade-card" data-type="robot" data-base-cost="1000">
+                <div class="upgrade-title">Кот-робот</div>
+                <div class="upgrade-price">1000 кликов</div>
+                <button class="upgrade-btn">Купить</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
